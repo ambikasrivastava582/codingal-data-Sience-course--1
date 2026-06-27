@@ -1,0 +1,9 @@
+openfile = open("hello.txt",'w')
+inputfile = open("aaa.txt",'r')
+line1 = set()
+for line in inputfile:
+    if line not in line1:
+        openfile.write(line)
+        line1.add(line)
+openfile.close()
+inputfile.close()
